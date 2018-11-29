@@ -1,3 +1,6 @@
+		.mob-menu li.close {
+			margin-left: 12%;
+		}		
 		.mob-nav {
 			height: 48px;
 			background-image: linear-gradient(#d1c136, #bcb221);
