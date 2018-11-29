@@ -3,9 +3,6 @@
   background-image: linear-gradient(#d1c136, #bcb221);
   }
 }
-.wrapper{
-  overflow-x: hidden;
-}
 body{
   overflow-x: hidden;
   margin:0;
