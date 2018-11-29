@@ -1,3 +1,7 @@
+window.onload = function(){
+	menu.style.display="none";
+}
+
 var mobileBtn = document.querySelector(".mobile-btn");
 var menu = document.querySelector(".mob-menu");
 var closeBtn = document.querySelector(".close");
@@ -20,29 +24,23 @@ window.addEventListener("click", function(event){
 	}
 })
 
-var mobNav = document.querySelector(".mob-nav");
-
-window.onload = function(){
-	mobNav.style.overflowX="hidden";
-}
-
-
-
 mobileBtn.onclick = function(){
 	document.body.style.overflowY="hidden";
 	document.getElementById("wrapper").style.position="fixed";
-	console.log("open")
+	menu.style.display="inline-block";
+	console.log("menu open")
 }
 
 closeBtn.onclick = function(){
 	document.body.style.overflowY="auto";
 	document.getElementById("wrapper").style.position="static";
-	console.log("closed")
+	menu.style.display="none";
+	console.log("menu closed")
 }
 
 overlay.onclick = function(){
 	document.body.style.overflowY="auto";
 	document.getElementById("wrapper").style.position="static";
-		console.log("closed")
-
+	menu.style.display="none";
+		console.log("menu closed")
 }
