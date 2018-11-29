@@ -20,7 +20,9 @@ window.addEventListener("click", function(event){
 	}
 })
 
-
+window.onload = function(){
+	document.body.style.overflowX="hidden";
+}
 
 mobileBtn.onclick = function(){
 	document.body.style.overflowY="hidden";
