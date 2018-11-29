@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bonnarps hjortgård</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link rel="stylesheet" type="text/css" href="parallax.css">
+	<link rel="stylesheet" type="text/css" href="dropdown_med_submenu.css">
+	<link rel="stylesheet" type="text/css" href="collaps_mob_menu.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="IMG-slider.css">
+</head>
+<body>
+
+<main id="wrapper" class="wrapper">
+	<nav class="mob-nav">
+		<ul class="mob-menu">
+			<li class="close">&times;</li>
+			<li><a href="">link 1</a></li>
+			<li><a href="">link 2</a></li>
+			<li><a href="">link 3</a></li>
+			<li><a href="">link 4</a></li>
+		</ul>
+		<span class="mobile-btn" id="mob-btn">☰</span>
+		<div class="overlay"></div>
+	</nav>
+
+	<nav id="menu">	
+	<ul>
+		<li><a id="aktuell" href="#">Startsida</a></li>
+		<li><a href="#">Aktuellt</a></li>
+		<li><a href="#" onclick="toggleNavPanel('dropdown1')">Företaget<span id="navarrow1" class="arrow">&#9660;</span></a>
+			
+			<ul id="dropdown1">
+				<li><a href="butik.html">Gårdsbutik</a></li>
+				<li><a href="#">Slakteri</a></li>
+				<li><a href="#">Uppfödning</a></li>				
+			</ul>
+			</li>
+		<li><a href="#" onclick="toggleNavPanel('dropdown2')">Produkter<span id="navarrow2" class="arrow">&#9660;</span></a>
+					
+					<ul id="dropdown2">
+						<li><a href="#">Korv</a></li>
+						<li><a href="#">Korv</a></li>
+						<li><a href="#">Korv</a></li>
+						<li><a href="#">Korv</a></li>
+					</ul>
+		</li>
+		<li><a href="#">Erbjudanden</a></li>
+		<li><a href="#">Kontakt </a></li>
+	</ul>
+	</nav>
+
+  <section class="section parallax bg1" id="prlx_lyr_1">
+    <h1>BONNARPS <br> HJORTGÅRD</h1>
+    <div class="scrolldown"><p class="jump"><a class="section1" href="#"><i class="fas fa-angle-down"></i></a></p></div>
+  </section>
+  <section class="info static">
+    <!--<h1>VÄLKOMMEN TILL BONNARPS HJORTGÅRD!</h1>-->
+    <p id="text">Bonnarps hjortgård är en gårdsbutik och slakteri för vilt i Bonnarp utanför Ljungbyhed. Vi driver en liten Gårdsbutik där vi säljer kött och charkprodukter från vilt. Vi har också en vilthanteringsanläggning för både våra egna hägnade dovhjortar och frilevande vilt.
+	Jägare kan sälja sitt vilt hit eller få återtag av det.</p>
+	<div>
+		<div><img id="steak" class="scale-up-center" src="https://img.icons8.com/ios/50/e74c3c/steak-rare-filled.png"><h3>Gårdsbutik</h3><p>Vår butik säljer kött från våra egna hjortar och frilevande vilt. Vi har även ett sortiment av ekologiska varor.</p><a href="butik.html" class="pagelink" >Läs mer</a></div>
+
+		<div><img class="rotate-90-cw" src="https://img.icons8.com/ios/50/cccccc/japanese-knife-filled.png"><h3>Slakteri</h3><p>I vårt slakteri kan vi hantera både vårt eget och andras vilt.</p><a href="#" class="pagelink" >Läs mer</a></div>
+
+		<div><img class="jump" src="https://img.icons8.com/ios/50/725E3F/baratheon-house-filled.png"><h3>Hjortuppfödning</h3><p>Våra hjortar strövar i de gröna markerna vid Söderåsens fot.</p><a href="#" class="pagelink" >Läs mer</a></div>
+	</div>
+
+	
+	<div class="auto-slider">
+	<ul class="auto-slider_content">
+		<li><img src="hjortar.jpg" alt="deers"></li>
+		<li><img src="godsaker-720-360.jpg" alt="food-1"></li>
+		<li><img src="korv-360.jpg" alt="food-2"></li>
+		<li><img src="korv-horn.jpg" alt="food-3"></li>
+	</ul>
+	</div>
+	
+
+	<a class="section2" href="#">Gå till toppen</a>
+ </section>
+  
+<footer id="footer">
+	<div class="leftfoot"><p>info@bonnarpshjort.se</p> <p>0435-?????</p></div>
+	<div class="rightfoot"><a href="#">© Olof Johansson 2018</a> <a href="https://icons8.com">Icon pack by Icons8</a></div>
+</footer>
+
+</main>
+<script src="disableScroll.js"></script>
+<script src="collaps_mob_menu.js"></script>
+<script src="parallaxScroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.auto-slider img {
+	display: block;
+	margin-top: -70px;
+}
+.auto-slider{
+	border-radius: 4px;
+	width: 720px;
+	height: 270px;
+
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+.auto-slider_content{
+	list-style: none;
+	display: flex;
+	/*animation-name: slide;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;*/
+
+	animation: slide 40s ease-in-out infinite;
+	animation-direction: alternate-reverse;
+}
+.auto-slider_content:hover{
+	animation-play-state: paused;
+}
+@keyframes slide{
+	10%{
+		transform: translateX(0);
+	}
+	15%, 30%{
+		transform: translateX(-720px);
+	}
+	35%, 50%{
+		transform: translateX(-1440px);
+	}
+	55%, 70%{
+		transform: translateX(-2160px);
+	}
+	75%, 90%{
+		transform: translateX(0);
+	}
+}

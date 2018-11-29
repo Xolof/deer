@@ -1,0 +1,114 @@
+		.mob-nav {
+			height: 48px;
+			background-image: linear-gradient(#d1c136, #bcb221);
+			line-height: 48px;
+			padding: 0 16px;
+			
+		}
+		.mob-menu{
+			display: inline-block;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.mob-menu li {
+			display: inline-block;
+		}
+		.mob-menu li > a {
+			text-decoration: none;
+			color: #404040;
+			font-weight: bold;
+			padding: 0 14px;
+		}
+		.mob-menu li.close{
+			display: none;
+		}
+		.mobile-btn {
+			float: right;
+			display: none;
+			color: #FFF;
+			font-size: 2em;
+		}
+		@media (max-width: 880px) {
+			.mobile-btn {
+				float: right;
+				display: block;
+				}
+
+			.mob-menu {
+				position: absolute;
+				top: 0;
+				right: 0;
+				display: block;
+				background-image: linear-gradient(#d1c136, #bcb221);
+				width: 300px;
+				height: 100%;
+				z-index: 100;
+				transform: translateX(300px);
+				transition: all 200ms ease-in-out;
+			}
+			.open{
+				transform: translateX(0);
+			}
+			.mob-menu li{
+				display: block;
+				padding: 0 14px;
+			}
+			.mob-menu li.close{
+				text-align: right;
+				display: block;
+				color: #FFF;
+				font-size: 2em;
+			}
+			.mobile-btn{
+				display: inline-block;
+			}
+			.overlay{
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background-color: rgba(0,0,0,.4);
+				opacity: 0;
+				z-index: -1;
+				transition: opacity 300ms linear;
+			}
+			.overlay.open {
+				z-index: 2;
+				opacity: 1;
+			}
+		}
+		@media (max-width: 289px) {
+			.mob-menu li{
+				margin-left: 15%;
+				}
+			}
+		@media (max-width: 240px) {
+			.mob-menu li{
+				margin-left: 25%;
+				}
+			}
+		@media (max-width: 210px) {
+			.mob-menu li{
+				margin-left: 35%;
+				}
+			}
+			@media screen and (min-width: 875px) {
+  			.mob-nav {
+    			display: none;
+    			}
+  			}
+ 			@media screen and (max-width: 874px) {
+    		.mob-nav {
+    			display: block;
+    			}
+    		.bg1{
+    			margin-top: -30px;
+    			top: 0px;
+    			z-index: -100;
+    			height: 40vh;
+    		}
+    		.info{
+    			margin-top: -5px;
+    		}

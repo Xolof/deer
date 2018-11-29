@@ -1,0 +1,148 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#menu {
+	background-image: linear-gradient(#d1c136, #bcb221);
+	width: 100%;
+	height: 60px;
+	z-index:10;
+	display: inline-block;
+  	clear: both;
+  	margin-top: 0px;
+  	font-size: 1.5em;
+}
+
+#menu ul{
+	list-style: none;
+	margin-top: 0px;
+}
+
+#menu ul li {
+	background-image: linear-gradient(#d1c136, #bcb221);
+	/*border-left: 1px solid #cecece;
+	border-right: 1px solid #cecece;*/
+	width: 160px;
+	height: 60px;
+	text-align: center;
+	float: left;
+	position: relative;
+	z-index:10;
+	line-height: 14px;
+}
+#menu ul li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	height: 40px;
+	padding-top: 20px;
+	z-index:10;
+	
+}
+#menu ul li a:hover {
+	background-image: linear-gradient(#c1a560, #603a00);
+	/*border-left: 1px solid #cecece;
+	border-right: 1px solid #cecece;*/
+	width: 160px;
+	height: 40px;
+	z-index:10;
+}
+#menu ul ul {
+	position: absolute;
+	margin-left: 0px;
+	height: 0px;
+	overflow: hidden;
+	z-index: 10000;
+	transition: height 0.3s linear 0s;
+}
+	
+/*#menu ul li:hover > ul {
+	display: block;
+	-webkit-animation: fadein 1s; 
+       -moz-animation: fadein 1s; 
+        -ms-animation: fadein 1s; 
+         -o-animation: fadein 1s; 
+            animation: fadein 1s;
+			}
+			/* Safari, Chrome and Opera > 12.1 */
+			/* Firefox < 16 */
+			/* Internet Explorer */
+            /* Opera < 12.1 */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+    1
+}
+
+#menu ul ul ul{
+	margin-left: 160px;
+	top: 0px;
+}
+.arrow {
+margin-right: -30px;
+color: #e5e5e5;
+font-size: 0.5em;
+}
+
+#aktuell {
+	background-image: linear-gradient(#c1a560, #603a00);
+}
+
+@media screen and (max-width: 875px) {
+ #menu {
+    display: none;
+  }
+ .bg1 {
+ height: 50vh;
+  }
+  .bg1 h1 {
+  padding-top: 20%;
+  }
+  .bg2 {
+  height: 40vh;
+  }
+ }
+
+ @media screen and (max-width: 1000px) {
+
+ 	#menu ul li{
+  		width: 143px;
+		height: 60px;
+		font-size: 0.9em;
+	}
+
+	#menu ul li a:hover {
+		width: 143px;
+		height: 40px;
+	}
+	#menu ul li ul a:hover {
+		width: 143px;
+		height: 40px;
+	}
+  }
