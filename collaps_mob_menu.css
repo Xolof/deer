@@ -79,9 +79,17 @@
 				opacity: 1;
 			}
 		}
+		@media (max-width: 650px){
+		.mob-menu {
+				width: 700px;
+				transform: translateX(700px);
+			}
+			.open{
+				transform: translateX(0);
+			}
 		@media (max-width: 289px) {
 			.mob-menu li{
-				margin-left: 15%;
+				margin-left: 0;
 				}
 			}
 		@media (max-width: 240px) {
@@ -91,7 +99,7 @@
 			}
 		@media (max-width: 210px) {
 			.mob-menu li{
-				margin-left: 35%;
+				margin-left: 0;
 				}
 			}
 			@media screen and (min-width: 875px) {
