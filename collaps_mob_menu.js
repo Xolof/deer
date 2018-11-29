@@ -20,9 +20,13 @@ window.addEventListener("click", function(event){
 	}
 })
 
+var mobNav = document.querySelector(".mob-nav");
+
 window.onload = function(){
-	document.body.style.overflowX="hidden";
+	mobNav.style.overflowX="hidden";
 }
+
+
 
 mobileBtn.onclick = function(){
 	document.body.style.overflowY="hidden";
