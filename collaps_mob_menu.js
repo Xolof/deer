@@ -24,16 +24,19 @@ window.addEventListener("click", function(event){
 
 mobileBtn.onclick = function(){
 	document.body.style.overflowY="hidden";
+	document.body.style.position="fixed";
 	console.log("open")
 }
 
 closeBtn.onclick = function(){
 	document.body.style.overflowY="auto";
+	document.body.style.position="static";
 	console.log("closed")
 }
 
 overlay.onclick = function(){
 	document.body.style.overflowY="auto";
+	document.body.style.position="static";
 		console.log("closed")
 
 }
